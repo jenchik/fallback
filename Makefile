@@ -7,4 +7,7 @@ test:
 	go test -race ./...
 
 bench:
+	go test -bench=Threads
+
+bench_all:
 	go test -bench=.

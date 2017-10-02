@@ -56,7 +56,6 @@ func testFallback(t *testing.T, f Fallback) {
 					var r int
 					h.Exclusive(func() { // executing with exclusive lock
 						m[k] = r
-						l.Broadcast(r)
 						listeners.Delete(k)
 
 						// for test
@@ -66,6 +65,7 @@ func testFallback(t *testing.T, f Fallback) {
 						// for example we load from DB
 						time.Sleep(time.Millisecond)
 						r = n
+						l.Broadcast(r)
 					})
 				})
 

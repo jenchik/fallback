@@ -58,7 +58,7 @@ func TestConcurrentMap(t *testing.T) {
 				}
 
 				// for example we load from DB
-				time.Sleep(lazyLoaderTimeout)
+				time.Sleep(time.Millisecond)
 				result = n
 
 				if _, actual := m.LoadOrStore(key, result); !actual {

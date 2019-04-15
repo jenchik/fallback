@@ -4,6 +4,7 @@ The pattern, similar to RWMutex. With low latency between RLock and WLock, as we
 [![Build Status](https://travis-ci.org/jenchik/fallback.svg)](https://travis-ci.org/jenchik/fallback)
 [![GoDoc](https://godoc.org/github.com/jenchik/fallback?status.svg)](https://godoc.org/github.com/jenchik/fallback)
 [![Go Report Card](https://goreportcard.com/badge/github.com/jenchik/fallback)](https://goreportcard.com/report/github.com/jenchik/fallback)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjenchik%2Ffallback.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjenchik%2Ffallback?ref=badge_shield)
 
 Installation
 ------------
@@ -169,3 +170,7 @@ BenchmarkThreadsDoBatchSizeN1-4          10000000           147 ns/op      13.55
 BenchmarkThreadsDoBatchSizeN1000-4       10000000           141 ns/op      14.17 MB/s          32 B/op           1 allocs/op
 BenchmarkThreadsConcurrentMap-4          100000000         18.3 ns/op     109.36 MB/s           0 B/op           0 allocs/op
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjenchik%2Ffallback.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjenchik%2Ffallback?ref=badge_large)
